@@ -1,5 +1,5 @@
 Description: >
-    Carlos Rivas / Udacity 2019
+    Mike Ajala / Cloud DevOps 2020
 
 Parameters:
 
@@ -76,5 +76,17 @@ Resources:
       - DeviceName: "/dev/sdk"
         Ebs:
           VolumeSize: '10'
-
+          
+  WebAppGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      VPCZoneIdentifier:
+      - Fn::ImportValue: 
+          !Sub "${EnvironmentName}-PRIV-NETS"
+      LaunchConfigurationName:
+        Ref: WebAppLaunchConfig
+      MinSize: '3'
+      MaxSize: '5'
+      TargetGroupARNs:
+      - Ref: WebAppTargetGroup
   
