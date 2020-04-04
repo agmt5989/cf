@@ -35,6 +35,12 @@ Parameters:
 
 Resources:
 
+  AppProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties: 
+      Roles:
+        - UdacityS3ReadOnlyEC2
+
   VPC: 
     Type: AWS::EC2::VPC
     Properties:
