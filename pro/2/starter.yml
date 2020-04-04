@@ -101,5 +101,16 @@ Resources:
         - Key: Name 
           Value: !Sub ${EnvironmentName} Private Subnet (AZ2)
   
+  NatGateway1EIP:
+    Type: AWS::EC2::EIP
+    DependsOn: IGWAttachment
+    Properties: 
+      Domain: vpc
+
+  NatGateway2EIP:
+    Type: AWS::EC2::EIP
+    DependsOn: IGWAttachment
+    Properties:
+      Domain: vpc
 #Outputs: 
   #Bonus points for useful outputs!
