@@ -35,5 +35,5 @@ Resources:
           aws s3 cp s3://udacity-demo-1/udacity.zip .
           unzip -o udacity.zip
   
-  Outputs: 
+Outputs: 
   #Bonus points for useful outputs!
