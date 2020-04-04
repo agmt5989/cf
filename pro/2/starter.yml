@@ -24,17 +24,17 @@ Resources:
         - Key: Name 
           Value: !Ref EnvironmentName
       
-  InternetGateway:
+  IGW:
         Type: AWS::EC2::InternetGateway
         Properties:
             Tags:
                 - Key: Name
                   Value: !Ref EnvironmentName
             
-  InternetGatewayAttachment:
+  IGWAttachment:
     Type: AWS::EC2::VPCGatewayAttachment
     Properties:
-      InternetGatewayId: !Ref InternetGateway
+      InternetGatewayId: !Ref IGW
       VpcId: !Ref VPC
   
 #Outputs: 
