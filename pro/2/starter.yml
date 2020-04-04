@@ -19,5 +19,5 @@ Resources:
         - Key: Name 
           Value: !Ref EnvironmentName
   
-Outputs: 
+#Outputs: 
   #Bonus points for useful outputs!
