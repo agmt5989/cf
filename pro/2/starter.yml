@@ -25,11 +25,11 @@ Resources:
           Value: !Ref EnvironmentName
       
   IGW:
-        Type: AWS::EC2::InternetGateway
-        Properties:
-            Tags:
-                - Key: Name
-                  Value: !Ref EnvironmentName
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Ref EnvironmentName
             
   IGWAttachment:
     Type: AWS::EC2::VPCGatewayAttachment
