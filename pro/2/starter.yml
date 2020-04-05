@@ -265,7 +265,7 @@ Resources:
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: !Ref InstanceType
-      InstanceProfile: !Ref AppProfile
+      IamInstanceProfile: !Ref AppProfile
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
         Ebs:
