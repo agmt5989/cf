@@ -2,6 +2,11 @@ Description: >
   Mike Ajala / Cloudformation IaC DevOps Project
   The compute hardware (servers)
 
+Parameters:
+  EnvironmentName:
+    Description: An environment name that will be prefixed to resource names
+    Type: String
+    
 Resources:
 
   LBSecGroup:
