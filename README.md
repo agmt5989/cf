@@ -6,7 +6,7 @@ This folder provides the supporting material and starter code for the "ND9991 - 
 
 ### Dependencies
 ##### 1. AWS account
-You would require to have an AWS account to be able to build cloud infrastructures.
+You would require to have an AWS account to be able to build cloud infrastructure.
 
 ##### 2. VS code editor
 An editor would be helpful to visualize the image as well as code. Download the VS Code editor [here](https://code.visualstudio.com/download).
