@@ -14,4 +14,4 @@ An editor would be helpful to visualize the image as well as code. Download the 
 ##### 3. An account on www.lucidchart.com
 A free user-account on [www.lucidchart.com](www.lucidchart.com) is required to be able to draw the web app architecture diagrams for AWS.
 
-> We want to try the auto CI build again. I have a pretty good feeling about this one
+> We want to try the auto CI build again. I have a pretty good feeling about this one. Or not
